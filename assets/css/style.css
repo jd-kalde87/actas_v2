@@ -1,0 +1,39 @@
+/* Definición de Colores Institucionales */
+:root {
+    --color-azul-principal: #0F2027;
+    --color-naranja-acento: #F37321;
+    --color-gris-secundario: #2C3E50;
+    --color-verde-succes: #279927;
+    --color-blanco: #FFFFFF;
+}
+/* =================================== */
+/* === PERSONALIZACIÓN DE PLANTILLA === */
+/* =================================== */
+
+/* Cambiar el color de fondo de la barra lateral */
+.sidebar-dark-primary {
+    background-color: var(--color-azul-principal) !important;
+}
+
+/* Cambiar el color del enlace activo y al pasar el mouse en la barra lateral */
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active,
+.sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
+    background-color: var(--color-naranja-acento) !important;
+    color: var(--color-blanco) !important;
+}
+
+/* Cambiar el color de los botones primarios */
+.btn-primary {
+    background-color: var(--color-gris-secundario);
+    border-color: var(--color-gris-secundario);
+}
+
+.btn-primary:hover {
+    background-color: #1a2531; /* Un tono más oscuro de gris para el hover */
+    border-color: #1a2531;
+}
+
+/* Cambiar el color de los bordes de las tarjetas primarias */
+.card-primary.card-outline {
+    border-top: 3px solid var(--color-gris-secundario);
+}
